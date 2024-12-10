@@ -1,6 +1,7 @@
 import React from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
 
 interface DropdownItem {
   label: string;
@@ -157,7 +158,10 @@ export function Header() {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-gray-900">Meat</div>
+          <div className="text-2xl font-bold text-gray-900 flex items-center">
+            <Image src="/logo.png" width={40} height={40} alt='Image logo'/>
+            <h1>MeatQR</h1>
+          </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
