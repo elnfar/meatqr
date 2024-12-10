@@ -21,7 +21,7 @@ export function Hero() {
                 Get Started
               </button>
               <button className="border border-black text-black px-8 py-3 rounded-lg hover:bg-gray-50 transition-colors">
-                See Demo
+                <a href="https://shorturl.at/nZo8c" target="_blank">Learn more</a>
               </button>
             </div>
           </div>
